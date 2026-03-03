@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Available Rooms | 2B Housing Connect</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  background: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+.room-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.room-card {
+  background: #f5f5f5;
+  border-radius: 12px;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+.room-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.room-card h3 {
+  padding: 10px 15px 5px;
+  margin: 0;
+}
+
+.room-card p {
+  padding: 0 15px;
+  margin: 5px 0;
+  color: #555;
+}
+
+.button {
+  display: block;
+  width: 85%;
+  margin: 10px auto;
+  padding: 12px;
+  background: #111;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+@media(min-width:768px){
+  .room-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+2B Housing Connect
+</header>
+
+<h1>Available Rooms in Buoho</h1>
+
+<div class="room-grid">
+
+  <!-- Room 1 -->
+  <div class="room-card">
+    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" alt="Room 1">
+    <h3>Spacious Single Room</h3>
+    <p>GHS 4500-6000</p>
+    <p>Location: Buoho</p>
+    <p>Clean environment with water and electricity available.</p>
+    <a href="room1.html" class="button">View Details</a>
+  </div>
+
+  <!-- Room 2 -->
+  <div class="room-card">
+    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="Room 2">
+    <h3>2 Bedroom Self Contained</h3>
+    <p>GHS 5000-7500</p>
+    <p>Location: Near Buoho Junction</p>
+    <p>Spacious rooms with tiled floors and secure compound.</p>
+    <a href="room2.html" class="button">View Details</a>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+<!-- Room 3 -->
+  <div class="room-card">
+    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" alt="Room 1">
+    <h3>Spacious flat room</h3>
+    <p>GHS 10000-25000</p>
+    <p>Location: Buoho</p>
+    <p>Clean environment with water and electricity available.</p>
+    <a href="room1.html" class="button">View Details</a>
+  </div>
