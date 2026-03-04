@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,143 +7,156 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 
-*{box-sizing:border-box;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Poppins',sans-serif;background:#fff;color:#111;}
 
-body{
-margin:0;
-font-family:'Poppins',sans-serif;
+/* NAVBAR */
+nav{
+position:fixed;
+top:0;
+width:100%;
 background:#ffffff;
-color:#111;
-animation:fadeIn 1s ease-in;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
 }
 
-@keyframes fadeIn{
-from{opacity:0;}
-to{opacity:1;}
-}
-
-header{
-padding:20px;
-text-align:center;
+nav h2{
+font-size:18px;
 font-weight:700;
-font-size:20px;
-background:#f4f4f4;
-letter-spacing:1px;
 }
 
+nav a{
+text-decoration:none;
+margin-left:20px;
+color:#111;
+font-weight:500;
+}
+
+/* HERO */
 .hero{
-padding:80px 20px;
+margin-top:70px;
+height:85vh;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-background:#f7f7f7;
+color:white;
+padding:20px;
 }
 
 .hero h1{
-font-size:30px;
+font-size:34px;
 margin-bottom:20px;
+max-width:600px;
 }
 
 .hero p{
-color:#555;
-margin-bottom:40px;
+margin-bottom:30px;
+font-size:16px;
+max-width:500px;
 }
 
-.button{
-display:block;
-width:90%;
-max-width:320px;
-margin:15px auto;
-padding:15px;
-border-radius:10px;
+.btn{
+padding:14px 28px;
+border-radius:8px;
 text-decoration:none;
 font-weight:600;
-transition:0.3s ease;
-text-align:center;
+margin:8px;
+transition:0.3s;
+display:inline-block;
 }
 
-.primary{
+.primary{background:#fff;color:#111;}
+.primary:hover{background:#ddd;}
+
+.secondary{background:#25D366;color:#fff;}
+.secondary:hover{opacity:0.9;}
+
+/* ABOUT */
+.section{
+padding:80px 20px;
+text-align:center;
+max-width:900px;
+margin:auto;
+}
+
+.section h2{
+margin-bottom:20px;
+font-size:26px;
+}
+
+.features{
+display:grid;
+grid-template-columns:1fr;
+gap:25px;
+margin-top:40px;
+}
+
+.feature{
+padding:25px;
+background:#f7f7f7;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.04);
+font-weight:600;
+}
+
+/* FOOTER */
+footer{
 background:#111;
 color:#fff;
-}
-
-.primary:hover{
-background:#333;
-transform:translateY(-3px);
-}
-
-.secondary{
-background:#e5e5e5;
-color:#111;
-}
-
-.secondary:hover{
-background:#d6d6d6;
-transform:translateY(-3px);
-}
-
-.whatsapp{
-background:#25D366;
-color:#fff;
-}
-
-.whatsapp:hover{
-transform:translateY(-3px);
-}
-
-.section{
-padding:70px 20px;
 text-align:center;
-}
-
-.icons{
-margin-top:40px;
-}
-
-.icon-item{
-margin:20px 0;
-font-weight:600;
-color:#333;
-}
-
-footer{
-padding:30px;
-text-align:center;
-background:#f4f4f4;
-color:#666;
+padding:30px 20px;
+margin-top:60px;
 font-size:14px;
-margin-top:40px;
+}
+
+@media(min-width:768px){
+.features{grid-template-columns:repeat(3,1fr);}
+.hero h1{font-size:42px;}
 }
 
 </style>
 </head>
 <body>
 
-<header>2B Housing Connect</header>
+<nav>
+<h2>2B Housing Connect</h2>
+<div>
+<a href="rooms.html">Rooms</a>
+<a href="landlords.html">Landlords</a>
+</div>
+</nav>
 
 <section class="hero">
-<h1>Find Verified Rooms in Buoho and its Vicinity Without Stress</h1>
-<p>Trusted local housing connection service in Buoho and nearby areas.</p>
+<h1>Find Verified Rooms in Buoho & Kumasi Without Stress</h1>
+<p>Trusted local housing connection service connecting serious tenants with responsible landlords.</p>
 
-<a href="rooms.html" class="button primary">View Available Rooms</a>
-<a href="landlords.html" class="button secondary">For Landlords</a>
-<a href="https://wa.me/233200113534" class="button whatsapp">Chat on WhatsApp</a>
+<a href="rooms.html" class="btn primary">View Available Rooms</a>
+<a href="https://wa.me/233200113534" class="btn secondary">Chat on WhatsApp</a>
 </section>
 
 <section class="section">
-<h2>About 2B Housing Connect</h2>
-<p>
-Mr. Fred Housing helps workers, couples, and families find verified and affordable rooms without stress.
-We connect serious tenants with responsible landlords.
-</p>
+<h2>Why Choose 2B Housing Connect?</h2>
+<p>We make house hunting simple, verified, and stress-free for workers, couples and families.</p>
 
-<div class="icons">
-<div class="icon-item">✔ Verified Listings</div>
-<div class="icon-item">✔ Affordable Options</div>
-<div class="icon-item">✔ Direct Contact</div>
+<div class="features">
+<div class="feature">✔ Verified Listings</div>
+<div class="feature">✔ Affordable Options</div>
+<div class="feature">✔ Direct Landlord Contact</div>
 </div>
 </section>
 
 <footer>
-© 2026 2B Housing Connect – Buoho, Kumasi
+© 2026 2B Housing Connect – Buoho, Kumasi, Ghana
 </footer>
 
 </body>
